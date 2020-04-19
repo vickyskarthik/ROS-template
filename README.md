@@ -12,5 +12,15 @@ To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.
 6. Environment setup
 7. Dependencies for building packages
 8. Initialize rosdep
+  
+## Workspace Creation
+The ROS workspace is commonly called catkin workspace - catkin_ws
+use the command 
+mkdir catkin_ws
+
+Inside the catkin workspace create another directory src
+All the programmer code and files are stored in the src directory
+cd catkin_ws
+mkdir src
 
 
