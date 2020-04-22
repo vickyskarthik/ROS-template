@@ -18,11 +18,17 @@ To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.
 ### Workspace Creation
 The ROS workspace is commonly called catkin workspace - catkin_ws
 use the command 
+
+'''python
 mkdir catkin_ws
+'''
 
 Inside the catkin workspace create another directory src
 All the programmer code and files are stored in the src directory
+
+'''python
 cd catkin_ws
 mkdir src
+'''
 
 
