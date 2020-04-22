@@ -1,8 +1,10 @@
-# MyRobot
+  ![logo](https://github.com/vickyskarthik/ROS-template/blob/master/images/ros%20logo.png)
+  
+### MyRobot   
 This repo is created as a part of the Robot Operating System(ROS) course.
 This repo can be used as a template to create the ROS workspace
 
-## INSTALLATION
+### INSTALLATION
 To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.org/ROS/Installation)
 1. Choose the intended Ubuntu Operating System.
 2. Choose the appropriate ROS version.
@@ -13,7 +15,7 @@ To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.
 7. Dependencies for building packages
 8. Initialize rosdep
   
-## Workspace Creation
+### Workspace Creation
 The ROS workspace is commonly called catkin workspace - catkin_ws
 use the command 
 mkdir catkin_ws
