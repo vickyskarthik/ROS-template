@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<robot name="origins">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        
+      </geometry>
+
+  </link>
+
+  <link name="right_leg">
+    <visual>
+      <geometry>
+        
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_right_leg" type="fixed">
+    <parent>
+    <child>
+    <origin xyz="0 -0.22 0.25"/>
+  </joint>
+ 
+<!-- NOTE-->
+<!--base_link is a cylinder with length of 0.6 and radius of 0.2 meters-->
+<!--right_leg is a box of size 0.6 x 0.1 x 0.2 meters -->
+<!-- complete the urdf file in xml--> 

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot name="materials">
+
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+<!-- syntax -->
+<!--material name="blue"/ within geometry-->
+
+<!-- NOTE-->
+<!--base_link is a cylinder with length of 0.6 and radius of 0.2 meters-->
+
+<!--right_leg and left_leg is a box of size 0.6 x 0.1 x 0.2 meters -->
+<!--right_leg origin offset:0 0 -0.3 roll,pitch,yaw:0 1.57075 0 -->
+<!--left_leg origin offset:0 0 -0.3 roll,pitch,yaw:0 1.57075 0 -->
+
+<!--base to right leg joint origin is 0 0.22 0.25 with fixed type-->
+<!--base to left leg joint origin is 0 -0.22 0.25 with fixed type-->
+
+<!-- complete the urdf file in xml--> 
+
+</robot>
