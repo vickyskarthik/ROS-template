@@ -2,7 +2,8 @@
   
 ### MyRobot   
 This repo is created as a part of the Robot Operating System(ROS) course.
-This repo can be used as a template to create the ROS workspace
+This repo can be used as a template to create the ROS workspace.
+Use ROS cheat sheet for reference to ROS command.
 
 ### INSTALLATION
 To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.org/ROS/Installation)
