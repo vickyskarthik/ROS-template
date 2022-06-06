@@ -2,7 +2,10 @@
   
 ### MyRobot   
 This repo is created as a part of the Robot Operating System(ROS) course.
-This repo can be used as a template to create the ROS workspace
+This repo can be used as a template to create the ROS workspace.
+
+### ROS CHEAT SHEET
+Use ROS cheat sheet for reference to ROS command.
 
 ### INSTALLATION
 To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.org/ROS/Installation)
@@ -21,15 +24,22 @@ use the command
 
 
 ```python
-mkdir catkin_ws
+mkdir ros_ws
 ```
 
 Inside the catkin workspace create another directory src
 All the programmer code and files are stored in the src directory
 
 ```python
-cd catkin_ws
+cd ros_ws
 mkdir src
 ```
-
+Create a package using the following
+  ```python
+cd ~/ros_ws/src
+catkin_create_pkg urdf_tutorial std_msgs rospy roscpp 
+cd ~/ros_ws
+catkin_make
+. ~/ros_ws/devel/setup.bash  
+```
 
