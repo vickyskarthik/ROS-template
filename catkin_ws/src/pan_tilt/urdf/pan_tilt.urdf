@@ -1,0 +1,29 @@
+Robot name: pan_tilt_tut
+Link name: base_link
+Cylinder = 0.01, 0.2
+originrpy="0 0 0" xyz="0 0 0"
+material = yellow
+
+Link name: pan_link
+Cylinder = 0.4, 0.04
+Origin rpy="0 0 0" xyz="0 0 0.09"
+material = red 0 0 1 1
+
+joint name = pan_joint
+type = revolute
+parent = base_link
+child = pan_link
+origin xyz = 0 0 0.1
+axis xyz = 0 0 1
+
+link name = tilt_link
+cylinder = 0.4, 0.04
+origin rpy = “0 1.5 0” xyz=”0 0 0”
+material = green
+
+joint = tilt_joint
+type = revolute
+parent= pan_link
+child = tilt_link
+origin xyz = 0 0 0.2
+axis xyz = 0 1 0 
