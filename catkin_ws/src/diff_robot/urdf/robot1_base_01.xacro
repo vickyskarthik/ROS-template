@@ -9,6 +9,7 @@
 
 	<xacro:property name="length_wheel" value="0.05" />
 	<xacro:property name="radius_wheel" value="0.05" />
+
 	<xacro:macro name="default_inertial" params="mass">
                <inertial>
                        <mass value="${mass}" />
