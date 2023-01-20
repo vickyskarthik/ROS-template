@@ -24,14 +24,17 @@ use the command
 
 ## Check your ROS installation
 ```cmd
-rosversion -d
-#This should return the version of ROS installed
-echo $ROS_ROOT
-#This should display the path to the ROS installation on your system.```
+rosversion -d```
 
-##
-python
-mkdir ros_ws
+  This should return the version of ROS installed
+```cmd
+echo $ROS_ROOT```
+  
+This should display the path to the ROS installation on your system.```
+
+
+```python
+mkdir ros_ws```
 
 
 Inside the catkin workspace create another directory src
