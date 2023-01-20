@@ -22,6 +22,13 @@ To install ROS following the instruction provided in [ROS Wiki](http://wiki.ros.
 The ROS workspace is commonly called catkin workspace - catkin_ws
 use the command
 
+## Check your ROS installation
+```sh
+$ rosversion -d
+#This should return the version of ROS installed
+$ echo $ROS_ROOT
+#This should display the path to the ROS installation on your system.
+
 
 ```python
 mkdir ros_ws
