@@ -23,16 +23,16 @@ The ROS workspace is commonly called catkin workspace - catkin_ws
 use the command
 
 ## Check your ROS installation
-```sh
-$ rosversion -d
+```cmd
+rosversion -d
 #This should return the version of ROS installed
-$ echo $ROS_ROOT
-#This should display the path to the ROS installation on your system.
+echo $ROS_ROOT
+#This should display the path to the ROS installation on your system.```
 
-
-```python
+##
+python
 mkdir ros_ws
-```
+
 
 Inside the catkin workspace create another directory src
 All the programmer code and files are stored in the src directory
