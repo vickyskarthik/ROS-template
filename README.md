@@ -32,27 +32,52 @@ This should return the version of ROS installed
 echo $ROS_ROOT
 ```
   
-This should display the path to the ROS installation on your system.```
+Create a ROS Workspace
 
 
 ```python
-mkdir ros_ws
+mkdir -p ~/your_workspace_name/src
+cd ~/your_workspace_name/src
+catkin_init_workspace
 ```
 
 
-Inside the catkin workspace create another directory src
-All the programmer code and files are stored in the src directory
-
+Create a Package
 ```python
-cd ros_ws
-mkdir src
-```
-Create a package using the following
-  ```python
-cd ~/ros_ws/src
-catkin_create_pkg urdf_tutorial std_msgs rospy roscpp 
-cd ~/ros_ws
-catkin_make
-. ~/ros_ws/devel/setup.bash  
+catkin_create_pkg your_package_name roscpp rospy pcl_ros
 ```
 
+Update the CMakeLists.txt in the pacakage
+```python
+cmake_minimum_required(VERSION 3.0.2)
+project(your_package_name)
+
+## Find catkin macros and libraries
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  sensor_msgs
+  pcl_ros
+)
+
+## System dependencies are found with CMake's conventions
+find_package(PCL REQUIRED)
+
+## Specify additional locations of header files
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${PCL_INCLUDE_DIRS}
+)
+
+## Declare a catkin package
+catkin_package()
+
+## Declare a C++ executable
+add_executable(main src/main.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(main
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+)
+
+```
